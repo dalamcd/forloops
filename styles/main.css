@@ -13,7 +13,41 @@ textarea {
 	line-height: 1.5;
 }
 
+body {
+	width: 90%;
+	background-color: #ffe386;
+	margin-top: 2em;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#curElem {
+	background-color: rgba(255, 0, 0, 0.5);
+}
+
+#curRow {
+	background-color: rgba(0, 0, 255, 0.5);
+	
+}
+
+.col {
+	width: 16%;
+}
+
+.row{
+	/*width: 90%;*/
+	padding: 2px;
+	padding-left: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
