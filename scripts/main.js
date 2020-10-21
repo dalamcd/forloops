@@ -5,17 +5,17 @@ const sampleArray = createPlan(3, 6);
 
 doFancyBackgroundSetup(sampleArray);
 
-let i = 0;
-let j = 0;
+let currentRow = 0;
+let currentColumn = 0;
 
 debugger
 for(const row of sampleArray) {
     for(const column of row) {
-        if(doFancyBackgroundCode(i, j, row, sampleArray)) {
-            j = 0;
+        if(doFancyBackgroundCode(currentRow, currentColumn, row, sampleArray)) {
+            currentColumn = 0;
             break;
         }
-    j++;
+    currentColumn++;
     }
-i++;
+currentRow++;
 }
